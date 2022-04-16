@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Lab2App: App {
+    let list = StudentListVM()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(VM: list)
         }
     }
 }
