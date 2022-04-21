@@ -20,7 +20,7 @@ struct ContentView: View {
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .frame(width: 300.0, height: 50)
                     .padding(.horizontal)
-                Button ("Show only students with 2 grade"){
+                Button ("Show only students with only one 4 grade and fives"){
                     VM.calculate()
                 }
                 .padding()
