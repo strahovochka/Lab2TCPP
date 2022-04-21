@@ -24,21 +24,12 @@ struct StudentList {
     
     mutating func target(){
         students.removeAll(where: { student in
-            var counter = 0
             for grade in student.grades{
-                if (grade < 4){
+                if (grade != 5){
                     return true
                 }
-                else if (grade == 4) {
-                    counter += 1
-                }
             }
-            if (counter != 1){
-                return true
-            }
-            else {
-                return false
-            }
+            return false
         })
     }
     
