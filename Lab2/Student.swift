@@ -25,7 +25,7 @@ struct StudentList {
     mutating func target(){
         students.removeAll(where: { student in
             for grade in student.grades{
-                if (grade == 3) {
+                if (grade == 2) {
                     return true
                 }
             }
