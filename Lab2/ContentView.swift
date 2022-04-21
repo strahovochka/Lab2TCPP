@@ -20,7 +20,7 @@ struct ContentView: View {
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .frame(width: 300.0, height: 50)
                     .padding(.horizontal)
-                Button ("Show only excellent students"){
+                Button ("Show only students with no 3 grade"){
                     VM.calculate()
                 }
                 .padding()
@@ -32,8 +32,6 @@ struct ContentView: View {
                                 Text("\(student.name)").bold()
                             }
                             Text("Birth Date: \(VM.formatter.string(from: student.birthDate))")
-                            Text("Enrollment Date: \(VM.formatter.string(from: student.enrolmentDate))")
-                            Text(showArray(student.grades))
                         }
                     }
                     Button("Add a student") {
